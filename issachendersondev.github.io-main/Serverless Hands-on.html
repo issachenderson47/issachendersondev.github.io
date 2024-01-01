@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Issac G. Henderson - CV Resume</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Issac G. Henderson - CV Resume">
+    <meta name="keywords" content="resume, Issac G. Henderson, data engineer, machine learning, AWS, Python, Spark, data warehouse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="shortcut icon"/>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/flaticon.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.css"/>
+    <link rel="stylesheet" href="css/magnific-popup.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+	<!-- Add the following styles for the hamburger menu ------------------------------>
+    <style>
+        /* Hamburger menu styles */
+        .menu-toggle {
+            cursor: pointer;
+            padding: 10px;
+            text-align: right;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .menu {
+            display: none;
+            flex-direction: column;
+            align-items: flex-end;
+            position: absolute;
+            top: 60px; /* Adjust as needed */
+            right: 10px; /* Adjust as needed */
+            background-color: #fff;
+            border: 1px solid #ddd;
+            z-index: 1;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu a {
+            padding: 15px;
+            text-decoration: none;
+            color: #333;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Add animation class */
+        .menu.show {
+            display: flex;
+            animation: slideIn 0.3s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+<!-- Add a wrapper div for the menu and content -->
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+	<!-- Add the hamburger menu button ------------------------------->
+    <div class="menu-toggle">
+        <div class="menu-icon">&#9776;</div>
+    </div>
+
+    <!-- Add the menu options -->
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Project 1</a>
+        <a href="#">Project 2</a>
+        <a href="#">Project 3</a>
+        <a href="#">Contact Me</a>
+        <!-- Add the title to the menu -->
+        <a href="https://1drv.ms/w/s!Au5n5CFoBqDCoFEvTcWJBG1RYkj7?e=7Z89MU">
+            <title>Issac G. Henderson - CV Resume</title>
+        </a>
+    </div>
+
+<!-- Your hero section -->
+<section class="hero-section spad">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-10 offset-xl-1">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="hero-text">
+                            <h2>Serverless Hands-on</h2>
+                            <p>Issac Henderson</p>
+                        </div>
+                    </div>
+                    <div>
+                        <body>
+                        
+                            <h2>Architecture</h2>
+                            <p>Here, we have a website that is designed in HTML, JavaScript & CSS, making it a completely static website. Deployed on Amazon S3, it utilizes the hosting of static website features, costing nearly zero cents.</p>
+                        
+                            <p>Realizing the need for a contact page, I encountered a challenge in adding server-side logic to static websites. Static websites lack server-side languages like PHP, Java, etc., making it impossible to generate dynamic content, save information to a database, or send emails.</p>
+                        
+                            <p>Serverless architectures, like AWS Lambda, offer a solution. They enable the addition of server-side logic to static websites, running scripts only when needed. For instance, AWS Lambda charges based on the number of requests and execution time, eliminating costs while waiting for user interactions.</p>
+                        
+                            <h2>Setup Amazon SES</h2>
+                            <!-- Add Amazon SES setup steps here -->
+                            <p>As we know, Lambda functions will send emails, so we need to set up AWS SES.</p>
+
+                            <p>Amazon SES requires you to verify your identities (the domains or email addresses you send emails) to confirm that you own them and prevent unauthorized use.</p>
+                        
+                            <p>Follow the steps outlined in the Amazon SES user guide to verify your sender's email.</p>
+                        
+                            <ol>
+                                <li>Go to the Amazon SES dashboard and click on “Create Identity.”</li>
+                                <li>Make sure to select “Email” and enter your email ID from which you want to send the mail, and click on “Create Identity.”</li>
+                                <li>Now, your screen will be redirected to the SES dashboard, and you need to open your mail and verify that it belongs to you.</li>
+                                <li>Once you verify, refresh the Amazon SES dashboard and you will see the status changed to “Verified”.</li>
+                            </ol>
+                        
+                            <h2>Create Lambda Execution Role</h2>
+                            <!-- Add Lambda execution role creation steps here -->
+                            <p>Now, we need to create a Lambda execution role. That Lambda will use to get permission to access the Amazon SES service.</p>
+
+    <p>Let’s go to the IAM dashboard, select policy from the right panel and click “Create Policy.”</p>
+
+    <ol>
+        <li>Select JSON on the create policy page. Click next: Tag, then next: Review.</li>
+        <code>
+            {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Sid": "PravinMishra",
+                        "Effect": "Allow",
+                        "Action": "ses:SendEmail",
+                        "Resource": "*"
+                    }
+                ]
+            }
+        </code>
+        <li>Enter the policy name and click “Create Policy”.</li>
+    </ol>
+
+    <p>Now let’s create the role. Select a role from the right panel and click on “create role.”</p>
+
+    <ol>
+        <li>On the Select trusted entity screen, select Lambda and click on “next.”</li>
+        <li>Select the policy you created earlier and click Next.</li>
+        <li>Enter the role name and click on “create role”. Remember this role as we will use it in the next step while creating the Lambda function.</li>
+    </ol>
+                            <h2>Defining AWS Lambda Function</h2>
+                            <!-- Add AWS Lambda function definition steps here -->
+                            
+                            <p>Now, we will create the lambda function. This lambda function will get all the user information through API Gateway.</p>
+
+                            <ol>
+                                <li>Let’s go to the Lambda function dashboard and click on “Create Function.”</li>
+                                <li>Give a meaningful name to the lambda function. Then click on “Change default execution role.” Select “Use existing role” and from the drop-down select the role which we created in the last step. Then click “Create function”.</li>
+                                <li>Now, paste the below code inside the lambda_function and click deploy.</li>
+                            </ol>
+                        
+                            <pre>
+                                <code>
+                                    // Paste your Lambda function code here
+                                </code>
+                            </pre>
+                        
+            
+                            <h2>Creating the API Gateway</h2>
+                            <!-- Add API Gateway creation steps here -->
+                    
+                        
+                            <p>Creating the API Gateway:</p>
+                        
+                            <ol>
+                                <li>Log in to the AWS console and select the API Gateway service. Go to the REST API and click on build.</li>
+                                <li>Select a new API, fill in your API name and click on “Create API.”</li>
+                                <li>Now the API is selected by default. Otherwise, you can also select this API from the dashboard. Now click on the “Actions” drop-down, and select “create resource.”</li>
+                                <li>Fill in the Resource Name. The path will be filled automatically for you, and click “Create Resource”.</li>
+                                <li>Select your newly-created resource and choose “create method.” Choose a POST.</li>
+                                <li>Here, you will choose our AWS Lambda Function. Search for the Lambda Function created earlier “contact” from the drop-down (Lambda Function) and save.</li>
+                                <li>You will get the message “Add the permission”. Click OK.</li>
+                                <li>After saving the form above, Click on the “action” menu and choose “deploy API.” Give the stage name “prod”, description and click on “Deploy”.</li>
+                                <li>Now get your Restful API URL from the “prod” tab, as shown in the screenshot below. We will use this URL on our “contact us” HTML page to send the request with all user information.</li>
+                            </ol>
+                        
+                            <img src="api_gateway_url_screenshot.png" alt="API Gateway URL Screenshot">
+                        
+                            <p>Make sure to Enable CORS in the API Gateway, or you’ll get an error:”Cross-Origin Request Blocked: Select the resources, go to Action and click on “Enable CORS”. Change the “Access-Control-Allow-Origin” to your website name. I will leave it to “*” as it's a demo.</p>
+                            <p>Now, we will create the lambda function. This lambda function will get all the user information through API Gateway.</p>
+
+                            <ol>
+                                <li>Let’s go to the Lambda function dashboard and click on “Create Function.”</li>
+                                <li>Give a meaningful name to the lambda function. Then click on “Change default execution role.” Select “Use existing role” and from the drop-down select the role which we created in the last step. Then click “Create function”.</li>
+                                <li>Now, paste the below code inside the lambda_function and click deploy.</li>
+                            </ol>
+                        
+                            <pre>
+                                <code>
+                                    // Paste your Lambda function code here
+                                </code>
+                            </pre>
+                        
+                            <p>Creating the API Gateway:</p>
+                        
+                            <ol>
+                                <li>Log in to the AWS console and select the API Gateway service. Go to the REST API and click on build.</li>
+                                <li>Select a new API, fill in your API name and click on “Create API.”</li>
+                                <li>Now the API is selected by default. Otherwise, you can also select this API from the dashboard. Now click on the “Actions” drop-down, and select “create resource.”</li>
+                                <li>Fill in the Resource Name. The path will be filled automatically for you, and click “Create Resource”.</li>
+                                <li>Select your newly-created resource and choose “create method.” Choose a POST.</li>
+                                <li>Here, you will choose our AWS Lambda Function. Search for the Lambda Function created earlier “contact” from the drop-down (Lambda Function) and save.</li>
+                                <li>You will get the message “Add the permission”. Click OK.</li>
+                                <li>After saving the form above, Click on the “action” menu and choose “deploy API.” Give the stage name “prod”, description and click on “Deploy”.</li>
+                                <li>Now get your Restful API URL from the “prod” tab, as shown in the screenshot below. We will use this URL on our “contact us” HTML page to send the request with all user information.</li>
+                            </ol>
+                        
+                            <img src="api_gateway_url_screenshot.png" alt="API Gateway URL Screenshot">
+                        
+                            <p>Make sure to Enable CORS in the API Gateway, or you’ll get an error:”Cross-Origin Request Blocked: Select the resources, go to Action and click on “Enable CORS”. Change the “Access-Control-Allow-Origin” to your website name. I will leave it to “*” as it's a demo.</p>
+                                                
+                        
+                            <h2>Connecting it all Together</h2>
+                            <!-- Add steps to connect Lambda function, API Gateway, and HTML page here -->
+
+
+                  <p>Since we created our AWS Lambda function and provided the API-endpoint access using the API gateway, it’s time to connect all the pieces together and test them. Put following JQuery code in your ContactUs HTML page <head> section. Replace the URL variable with your API Gateway URL. You can change field validation as per your need.
+
+                  </p>          
+        </div>    <div>
+            <h2>Conclusion</h2>
+            <p>
+                Now you should be able to submit your contact form and receive email notifications when a form is completed and submitted.
+            </p>
+            <p>
+                This article aims to address a common use case for any individual or small business that hosts its website on Amazon S3. You can make your static website more dynamic without spinning up any servers with the help of this post.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Your other sections (e.g., resume, education, certifications, etc.) -->
+
+<!-- Your contact section -->
+<section class="contact-section spad">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2">
+                <div class="section-title">
+                    <h2>Contact Me</h2>
+                </div>
+                <form class="contact-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="E-mail">
+                        </div>
+                        <div class="col-md-12">
+                            <input type="text" placeholder="Subject">
+                            <textarea placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="text-md-right">
+                        <button class="site-btn">Send message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Your footer section -->
+
+<!-- Your scripts -->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<!-- Add other scripts as needed -->
+
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/issacghenderson/one-on-one-with-issac', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: undefined }); }</script>
+<!-- Calendly badge widget end -->
+
+<!-- Add the following script for the hamburger menu functionality -->
+<script>
+    $(document).ready(function () {
+        $(".menu-toggle").click(function () {
+            $(".menu").toggleClass("show");
+        });
+    });
+</script>
+
+</body>
+</html>

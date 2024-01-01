@@ -156,7 +156,7 @@ ol {
 	display: inline-block;
 	text-transform: uppercase;
 	font-size: 12px;
-	min-width: 50px;
+	min-width: 213px;
 	min-height: 20px;
 	text-align: center;
 	padding: 20px 10px 15px;
@@ -366,7 +366,7 @@ ol {
 	Header section
 -----------------------*/
 .header-section {
-	padding: 30px 20px;
+	padding: 50px 40px;
 	background: #f2f7f8;
 }
 
@@ -384,7 +384,7 @@ ol {
 }
 
 .header-buttons a {
-	margin-top: 5px;
+	margin-top: 15px;
 }
 
 /*---------------------
