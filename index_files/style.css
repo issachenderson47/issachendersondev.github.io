@@ -8,6 +8,77 @@
 /*----------------------------------------*/
 /* Template default CSS
 /*----------------------------------------*/
+
+To make your site mobile-friendly, you need to add responsive design elements to your HTML and CSS. Here's an example of how you can modify your existing code:
+
+Viewport Meta Tag:
+Add the viewport meta tag to ensure proper rendering and scaling on mobile devices.
+html
+Copy code
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+CSS Media Queries:
+Use CSS media queries to adjust styles based on the screen size. Add these styles to your existing CSS code.
+css
+Copy code
+/* General styles for larger screens */
+
+/* Add the following media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    /* Adjust the padding for smaller screens */
+    .spad {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    /* Adjust font sizes and margins for smaller screens */
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /* Add styles to make images responsive */
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Add styles for the mobile menu */
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 60px; /* Adjust as needed */
+        right: 10px; /* Adjust as needed */
+        background-color: #fff;
+        border: 1px solid #ddd;
+        z-index: 1;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu a {
+        padding: 15px;
+        text-decoration: none;
+        color: #333;
+        display: block;
+        transition: background-color 0.3s;
+    }
+
+    .menu a:hover {
+        background-color: #f1f1f1;
+    }
+}
 html,
 body {
 	height: 100%;
@@ -395,7 +466,7 @@ ol {
 }
 
 .hero-text {
-	margin-bottom: 120px;
+	margin-bottom: 80px;
 }
 
 .hero-text h2 {
@@ -692,6 +763,60 @@ ol {
 	color: #838488;
 	line-height: normal;
 }
+
+.menu-toggle {
+	cursor: pointer;
+	padding: 10px;
+	text-align: right;
+}
+
+.menu-icon {
+	font-size: 24px;
+	color: #333;
+}
+
+.menu {
+	display: none;
+	flex-direction: column;
+	align-items: flex-end;
+	position: absolute;
+	top: 60px; /* Adjust as needed */
+	right: 10px; /* Adjust as needed */
+	background-color: #fff;
+	border: 1px solid #ddd;
+	z-index: 1;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu a {
+	padding: 15px;
+	text-decoration: none;
+	color: #333;
+	display: block;
+	transition: background-color 0.3s;
+}
+
+.menu a:hover {
+	background-color: #f1f1f1;
+}
+
+/* Add animation class */
+{
+	display: flex;
+	animation: slideIn 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 
 /*---------------------
 	Home 2 Style
