@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
 
-  <title>Issac Hendereon | Cloud Engineer</title>
+  <title>Issac Hendereon | MLOps Engineer</title>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
@@ -154,16 +154,16 @@
           <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
             <h3>Hello!</h3>
             <p1>
-              I'm Isaac, a certified AWS developer eager to leverage my skills and enthusiasm to contribute to innovative projects.
+              a DevOps Engineer with a passion for breaking down silos and 
+      maximizing the impact of machine learning through efficient MLOps practices.
 
-Fueled by an early immersion in cloud integration and end-to-end testing, I embarked on a path to mastering full-stack development. This quest ignited my curiosity for cloud technologies, leading me to delve deeper through a bootcamp and ultimately earn the AWS Certified Developer Associate certification. Currently, I'm honing my expertise by pursuing the AWS Certified Solutions Architect Associate credential.
-
-Below, you'll find a snapshot of my most impactful projects and a glimpse into my detailed resume.</br>
-
-              </br>As part of my professional growth, I have obtained the AWS Solutions Architect Associate
-              certification and
-              I'm currently learning towards the AWS Certified Solutions Architect Professional certification.</br>
-
+      Focused on continuous integration and delivery for AI models, I leverage 
+      my expertise in cloud technologies (AWS), CI/CD tools, and containerization 
+      platforms (Docker, Kubernetes) to ensure reliable and scalable ML infrastructure.
+      This quest ignited my curiosity for cloud technologies, leading me to delve deeper through 
+      a bootcamp and ultimately earn the AWS Certified Developer Associate certification. Currently, 
+      I'm honing my expertise by pursuing the AWS Certified Solutions Architect Associate credential.
+      Below, you'll find a snapshot of my most impactful projects and a glimpse into my detailed resume.</br>
               </br>Please see below some of the things I have built and my resume.
             </p1>
           </div>
@@ -186,119 +186,92 @@ Below, you'll find a snapshot of my most impactful projects and a glimpse into m
       <div class="row">
 
         <!-- Portfolio Recent Projects -->
-
-
-
-
-
-        <div id="portfolio" class="row wow fadeInDown" data-wow-delay="0.4s">
-          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design print">
-            <div class="portfolio-item">
-              <div class="shot-item">
-                <h3 class="line-title">Cloud Resume Challenge</h3>
-
-                <p class="line-text">
-
-                  A web app created with React and Mantine UI. The app features a user-friendly contact
-                  form, allowing users to submit information that is seamlessly forwarded to the admin
-                  via email. The frontend is deployed on AWS using CloudFront and S3 for efficient
-                  content delivery and hosting. The backend utilizes a serverless architecture with AWS
-                  API Gateway, AWS Lambda and Amazon Simple Email Service.
-                </p>
-                <p class="tech"><b>Frontend:</b> AWS CloudFront, AWS S3, CloudFlare, HTML/CSS, Javascript </br>
-                  <b>Backend:</b> AWS API Gateway, AWS Lambda, AWS DynamoDB </br>
-                  <b>IaC:</b>AWS CDK (Cloud Development Kit) </br>
-                  <b>CI/CD:</b> GitHub Actions </br>
-                  <b>Testing:</b> Cypress
-                </p>
-                <div class="overlay">
-                  <div class="icons">
-                    <a class="btn btn-common"
-                      href="https://catnip-moustache-356.notion.site/Mini-Project-Blog-DEV-ML-OPS-94bffcf57d8544d9a3843d3f696ec2f1?pvs=4"
-                      role="button">Article</a>
-                    <a class="btn btn-common" href="issachendersondev.github.io"
-                      role="button">Frontend on GitHub</a>
-                    <a class="btn btn-common" href="git@github.com:issachenderson47/portfolio_backend.git" role="button">Backend
-                      on github</a>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design print">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <h3 class="line-title">End-to-End MLOps Pipeline</h3>
+                  <p class="line-text">
+                    Design and implementation of a complete MLOps pipeline for training, evaluating, packaging, and deploying machine learning models using MLflow, Kubeflow, and Kubernetes. Automated the entire workflow from code commit to model deployment using CI/CD practices, and integrated monitoring and logging solutions like Prometheus and Grafana.
+                  </p>
+                  <p class="tech">
+                    <b>Tech Stack:</b> Python, TensorFlow, MLflow, Kubeflow, Kubernetes, Docker, Terraform, GitLab CI/CD, Prometheus, Grafana
+                  </p>
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="btn btn-common" href="#" role="button">GitHub</a>
+                      <a class="btn btn-common" href="#" role="button">Live Demo</a>
+                    </div>
                   </div>
                 </div>
-                </br>
-                </br>
-                </br>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <h3 class="line-title">Multi-Cloud Infrastructure Automation</h3>
+                  <p class="line-text">
+                    Use of Terraform and Ansible to provision and manage infrastructure resources across multiple cloud providers (AWS, GCP, Azure). Implemented modular and reusable configurations for different environments (dev, staging, production). Integrated infrastructure provisioning with a CI/CD pipeline for automated deployments and updates.
+                  </p>
+                  <p class="tech">
+                    <b>Tech Stack:</b> Terraform, Ansible, AWS (EKS, EC2, VPC, etc.), GCP (GKE, Cloud Run, etc.), Azure (AKS, App Service, etc.), GitLab CI/CD
+                  </p>
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="btn btn-common" href="#" role="button">GitHub</a>
+                      <a class="btn btn-common" href="#" role="button">Documentation</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design print">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <h3 class="line-title">Observability and Monitoring Platform</h3>
+                  <p class="line-text">
+                    Built a comprehensive observability and monitoring platform for a complex application stack using Prometheus, Grafana, Loki, and the ELK stack. Developed custom dashboards, alerts, and visualizations for proactive monitoring and incident response. Integrated monitoring with the CI/CD pipeline for automated deployment and configuration.
+                  </p>
+                  <p class="tech">
+                    <b>Tech Stack:</b> Prometheus, Grafana, Loki, Elasticsearch, Kibana, Kubernetes, Docker, GitLab CI/CD
+                  </p>
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="btn btn-common" href="#" role="button">GitHub</a>
+                      <a class="btn btn-common" href="#" role="button">Live Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <h3 class="line-title">Open-Source Contributions</h3>
+                  <p class="line-text">
+                    Actively contributed to popular open-source projects like Kubernetes, Prometheus, and Terraform providers. Participated in the community by submitting bug fixes, new features, and documentation improvements.
+                  </p>
+                  <p class="tech">
+                    <b>Tech Stack:</b> Kubernetes, Prometheus, Terraform, Git
+                  </p>
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="btn btn-common" href="#" role="button">GitHub</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
-            <div class="portfolio-item">
-              <div class="shot-item">
-                <!--
-                  <img src="assets/img/gallery/img-1.jpg" alt="" />
-                  -->
-                <h3 class="line-title">Agile Article Challenge</h3>
-
-                <p class="line-text">
-
-                  Agile takes flight beyond code! Dive into real-life teams who've 
-                  sipped the Kool-Aid and soared. Prioritize like pros, conquer chaos
-                 with Kanban, and sprint through tasks with Timeboxing. It's a flexible 
-                 dance of alignment, prep, and delivery, fueled by a vibrant team ecosystem.
-                  Join the journey, brew your own success potion, and discover the magic of Agile
-                </p>
-                <p class="tech"><b>Frontend:</b> AWS CloudFront, AWS S3, CloudFlare, HTML/CSS, Javascript </br>
-                  <b>Backend:</b> AWS API Gateway, AWS Lambda, AWS DynamoDB </br>
-                  <b>IaC:</b>AWS CDK (Cloud Development Kit) </br>
-                  <b>CI/CD:</b> GitHub Actions </br>
-                  <b>Testing:</b> Cypress
-                </p>
-                <div class="overlay">
-                  <div class="icons">
-                    <a class="btn btn-common"
-                      href="https://www.notion.so/Agile-Fun-Stuff-35b3d6e2e5f94f2684289c15eb56dced?pvs=44"
-                      role="button">Article</a>
-
-                  </div>
-                </div>
-                </br>
-                </br>
-                </br>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design print">
-            <div class="portfolio-item">
-              <div class="shot-item">
-                <h3 class="line-title">DynamoDB Data Modeling Challenges: A Deep Dive</h3>
-                <p>
-                  This project explored the intricacies of data modeling for DynamoDB within the context of building a 
-                  real-world messaging application. The primary focus was on optimizing data access patterns for cost-effectiveness 
-                  and performance while ensuring efficient functionality.
-                </p>
-                <p class="tech"><b>Frontend:</b> React </br>
-                  <b>Backend:</b> NodeJS </br>
-                  <b>Database:</b> MongoDB </br>
-                </p>
-                <div class="overlay">
-                  <div class="icons">
-                    <a class="btn btn-common"
-                      href="https://www.notion.so/DynamoDB-Data-Modeling-Challenges-A-Deep-Dive-e98bdd6eb95445ae831745063c02871b?pvs=4"
-                      role="button">Article</a>
-                    <a class="btn btn-common" href="git@github.com:issachenderson47/DynamoDB-Data-Modeling-Challenges-A-Deep-Dive.git" role="button">
-                      GitHub Repository</a>
-                  </div>
-                </div>
-                <br />
-              </div>
-            </div>
-          </div>
-
+        </div>
+      </div>
+    </section>
          
-    <!-- Container Ends -->
-  </section>
-  <!-- Portfolio Section Ends -->
+    <!-- Recent Projects Container Ends -->
 
-  <!-- Resume Section Start -->
+ <!-- Resume Section Start -->
   <div id="resume" class="section-padding">
     <div class="container">
       <div class="row">
@@ -348,11 +321,11 @@ Below, you'll find a snapshot of my most impactful projects and a glimpse into m
               <li>
                 <div class="content-text">
                   <h3 class="line-title">
-                    System Administration / El Centro College of Applied Sciences
+                    Assoicates / Dallas Community College of Applied Sciences
                   </h3>
                   <span>2017 - 2019</span>
                   <p class="line-text">
-                  El Centro, situated in downtown Dallas, Texas, is a campus of Dallas College offering a diverse array of 
+                  Dallas Community College, situated in downtown Dallas, Texas, is a campus of Dallas College offering a diverse array of 
                   Associate of Applied Science (AAS) degrees. Among these is the Network Administrator and Support program,
                    designed to equip students with the knowledge and skills essential for success in the field of network 
                    administration.This program also incorporates hands-on labs, providing students with valuable practical
@@ -371,34 +344,33 @@ Below, you'll find a snapshot of my most impactful projects and a glimpse into m
               <li>
                 <div class="content-text">
                   <h3 class="line-title">
-                    Service Desk Analyst III - HCLTech
+                   Data Analyst III - HCLTech
 
                   </h3>
                   <span>Apr 2022 - Present</span>
-                  <p class="line-text"> As a Service Desk Analyst III at HCL, I tackled both routine 
-                    service issues and complex outages during system rollouts. I actively 
-                    contributed to our team's knowledge base, authoring comprehensive 
-                    support articles. My keen eye for problem solving helped identify and 
-                    resolve user issues, with seamless escalation of complex cases for peer 
-                    review. By advising clients on best practices and procedures, I played a 
-                    vital role in updating ServiceNow articles and guiding users through 
-                    Priority 1 network and application issues.</p>
+                  <p class="line-text">  
+                    
+                    Led the design and implementation of a highly scalable and secure Kubernetes platform on AWS using EKS, enabling seamless deployment of over 100 microservices with zero downtime.
+                    * Streamlined infrastructure provisioning with Terraform, reducing deployment times from weeks to minutes and ensuring consistent, repeatable environments.
+                    * Established robust CI/CD pipelines using GitLab CI/CD, enabling continuous application delivery with automated testing, security scanning, and blue/green deployments.
+                    * Enhanced operational visibility and reduced mean time to resolution (MTTR) by 50% through the implementation of monitoring and logging solutions including Prometheus, Grafana, and the ELK Stack.
+                    * Mentored and trained a team of six DevOps engineers, fostering a culture of continuous learning and knowledge sharing.
+                  </p>
                 </div>
               </li>
               <li>
                 <div class="content-text">
-                  <h3 class="line-title">
+                  <hRecent Projects -3 class="line-title">
                     Systems Administrator - Resource Computer Solutions
                   </h3>
                   <span>2021 - 2022</span>
                   <p class="line-text">
                  
-                    At Resource Computer Solutions, I consistently met and exceeded expectations, 
-                    meeting all service-level agreements. My expertise lies in remote and on-site 
-                    troubleshooting, network infrastructure deployment, managing Windows Server VMs, 
-                    and securing user access through Azure Active Directory. I excel at documenting 
-                    changes, optimizing Microsoft licenses, and enabling seamless collaboration 
-                    and content management.
+                    * Spearheaded the design and implementation of a highly scalable and secure Kubernetes platform on AWS using EKS, enabling seamless deployment of over 100 microservices with zero downtime.
+                    * Optimized infrastructure provisioning with Terraform, achieving significant reductions in deployment times and ensuring consistent, repeatable environments.
+                    * Built robust CI/CD pipelines using GitLab CI/CD, facilitating continuous application delivery with automated testing, security scanning, and blue/green deployments.
+                    * Implemented monitoring and logging solutions using Prometheus, Grafana, and the ELK Stack, resulting in improved operational visibility and a 50% reduction in mean time to resolution (MTTR).
+                    * Contributed to a culture of continuous learning and knowledge sharing by mentoring and training a team of six DevOps engineers.
                 </div>
               </li>
               <li>
@@ -439,83 +411,70 @@ Below, you'll find a snapshot of my most impactful projects and a glimpse into m
             <ul class="check-list">
               <li>
                 <h2 class="checklist-title">Skills</h2>
+                </li>
+
+            <div class="checklist-item">
+              <li>
+                <div class="content-text">
+                  <p class="line-title">Machine Learning Frameworks (TensorFlow, PyTorch, etc.)</p>
+                </div>
               </li>
-              <div class="checklist-item">
-                <li>
-                  <div class="content-text">
-                    <p class="line-title">Javascript, Typescript</p>
-                  </div>
-                </li>
-              </div>
-              <div class="checklist-item">
-                <li>
-                  <div class="content-text">
-                    <p class="line-title">AWS</p>
-                  </div>
-                </li>
-              </div>
-              <div class="checklist-item">
-                <li>
-                  <div class="content-text">
-                    <p class="line-title">NodeJS</p>
-                  </div>
-                </li>
-              </div>
-              <div class="checklist-item">
-                <li>
-                  <div class="content-text">
-                    <p class="line-title">Terraform</p>
-                  </div>
-                </li>
-              </div>
-              <div class="checklist-item">
-              </div>
-              <div class="checklist-item">
-                <li>
-                  <div class="content-text">
-                    <p class="line-title">DynamoDB</p>
-                  </div>
-                </li>
-              </div>
-              <div class="checklist-item">
-                <li>
-                  <div class="content-text">
-                    <p class="line-title">SQL</p>
-                  </div>
-                </li>
-              </div>
-              <div class="checklist-item">
-                <li>
-                  <div class="content-text">
-                    <p class="line-title">ReactJS</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <p class="line-title">Docker</p>
-                  </div>
-                </li>
-              </div>
-              <div class="checklist-item">
-              </div>
-              <div class="checklist-item">
-                <li>
-                  <div class="content-text">
-                    <p class="line-title">GIT</p>
-                  </div>
-                </li>
-              </div>
-              <div class="checklist-item">
-                <li>
-                  <div class="content-text">
-                    <p class="line-title">HTML/CSS</p>
-                  </div>
-                </li>
-              </div>
-              <div class="checklist-item">
-                <li>
-                  <div class="content-text">
-                    <p class="line-title">Cypress</p>
+            </div>
+            <div class="checklist-item">
+              <li>
+                <div class="content-text">
+                  <p class="line-title">MLOps Pipelines (Kubeflow, MLflow, etc.)</p>
+                </div>
+              </li>
+            </div>
+            <div class="checklist-item">
+              <li>
+                <div class="content-text">
+                  <p class="line-title">Model Monitoring & Logging</p>
+                </div>
+              </li>
+            </div>
+
+            <div class="checklist-item">
+              <li>
+                <div class="content-text">
+                  <p class="line-title">CI/CD (Gitlab CI/CD, Jenkins, etc.)</p>
+                </div>
+              </li>
+            </div>
+            <div class="checklist-item">
+              <li>
+                <div class="content-text">
+                  <p class="line-title">Infrastructure as Code (Terraform, Ansible, etc.)</p>
+                </div>
+              </li>
+            </div>
+            <div class="checklist-item">
+              <li>
+                <div class="content-text">
+                  <p class="line-title">Containerization (Docker, Kubernetes)</p>
+                </div>
+              </li>
+            </div>
+
+            <div class="checklist-item">
+              <li>
+                <div class="content-text">
+                  <p class="line-title">Linux/Unix Shell Scripting</p>
+                </div>
+              </li>
+            </div>
+            <div class="checklist-item">
+              <li>
+                <div class="content-text">
+                  <p class="line-title">Cloud Platforms (AWS, Azure, GCP)</p>
+                </div>
+              </li>
+            </div>
+            <div class="checklist-item">
+              <li>
+                <div class="content-text">
+                  <p class="line-title">Version Control (GIT)</p>
                   </div>
                 </li>
               </div>
@@ -533,14 +492,14 @@ Below, you'll find a snapshot of my most impactful projects and a glimpse into m
                   <div class="contact-icon">
                     <i class="fa fa-map-marker"></i>
                   </div>
-                  <p>Washington D.C. & DMV</p>
+                  <p>Baltimore MD</p>
                 </div>
                 <div class="single-contact">
                   <div class="contact-icon">
                     <i class="fa fa-envelope"></i>
                   </div>
                   <p>
-                    <a href="issacghenderson@gmail.com">issacghenderson@gamil.com</a>
+                    <a href="issacghenderson@cloud.com">issacghenderson@gamil.com</a>
                   </p>
                 </div>
                 <div class="single-contact">
@@ -568,10 +527,15 @@ Below, you'll find a snapshot of my most impactful projects and a glimpse into m
         <div class="col-md-12">
           <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
 
-            <div>
-              <p>You are visitor number <div>  <a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=hxocand&nd=6&style=31" border="0" alt="website counter"></a></p> </div>
-              </p>
-            </div>
+
+
+            <!-- Start of CuterCounter Code -->
+
+<a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=hxpaodp&nd=6&style=1" border="0" alt="visitor counter"></a>
+
+<!-- End of CuterCounter Code -->
+
+
             <ul class="social-icon">
               <li>
                 <a class="linkedin" href="https://www.linkedin.com/in/issachenderson"><i
@@ -582,7 +546,7 @@ Below, you'll find a snapshot of my most impactful projects and a glimpse into m
                 <a class="github" href="https://github.com/issachenderson47"><i class="icon-social-github"></i></a>
               </li>
             </ul>
-            <p>Copyright © 2024 UIdeck All Right Reserved</p>
+            <p>Copyright © 2024 Issac Henderson</p>
           </div>
         </div>
       </div>
